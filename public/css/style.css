@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+h1{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    color: #333;
+    letter-spacing:2px;
+    margin: 0;
+    font-weight: 600;
+}
+.holder{
+    width: 1000px;
+    padding-top:50px;
+}
+.nav{
+    text-align:left;
+    text-transform: lowercase;
+    font-variant:small-caps;
+    font-size:20px;
+    padding:0px 0px 0px 10px;
+}
+.nav a{
+    position:relative;
+    padding: 10px;
+    display:inline;
+    text-decoration: none;
+    color:#555;
+    font-weight: 700;
+}
+.nav a:hover{
+    color: #444;
+}
+.nav a:hover .line_span{
+    width:100%;
+}
+.line_span{
+    position: absolute;
+    top: 90%;
+    width:0%;
+    height:2.6px;
+    left:0;
+    background-color:#444;
+    transition: 0.3s;
+}
+hr{
+    width: 100%;
+    /* border:0; */
+    /* padding: 0; */
+    /* height:1px; */
+    border:1px solid rgba(0, 0, 0, 0.2);
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
+    background-color:#222;
+    padding:15px;
+    color: rgba(255,255,255,0.7);
+    text-transform: capitalize;
+    letter-spacing:1px;
+    font-size: 13px;
+    padding-left: 30px;
+}
+.sec_holder{
+    width:1300px;
+    padding-top: 30px;
+    background-color:transparent;
+}
+fieldset{
+    padding:20px;
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text]{
+    width: 400px;
+    padding: 10px;
+    border:1px solid rgba(0,0,0,0.1);
+    letter-spacing:1px;
+    text-transform: capitalize;
+    transition: 0.2s ease-in;
+    color: rgba(0,0,0,0.7);
+}
+input[type=text]:focus{
+    outline: none;
+    border:1px solid rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.02);
+    letter-spacing:2px;
+}
+input[type=text]:hover{
+    border:1px solid rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.02);
+}
+::placeholder{
+    letter-spacing:1px;
+    text-transform: capitalize;
+    color: rgba(0,0,0,0.3);
+}
+button[type=button]{
+    width:200px;
+    padding: 10px;
+    background-color: #222;
+    color: rgba(255,255,255,0.7);
+    text-transform: capitalize;
+    letter-spacing:1px;
+    text-align: center;
+    border:1px solid rgba(0,0,0,0.1);
+    transition: 0.2s ease-in;
+    letter-spacing:1.5px;
+    /* font-size: 13px; */
+}
+button[type=button]:focus{
+    outline: none;
+}
+#result{
+    font-family:Montserrat Light;
+    width: 1260px;
+    padding:20px 0px 20px 40px;
+    background-color:#222;
+    border-radius: 5px;
+    text-align: left;
+    font-size:15px;
+    font-weight:200;
+    color: whitesmoke;
+    overflow: hidden;
+    text-transform: capitalize;
+    letter-spacing:3px;
+    display:none;
+}
+#result #result1,#result2{
+    display: inline;
+}
+#result #result2{
+    padding: 0px 40px 0px 0px;
+    font-size:20px;
+    float:right;
+    cursor: pointer;
+}
+
+#result #result1{
+    float:left;
+    padding-top:2px;
+}
