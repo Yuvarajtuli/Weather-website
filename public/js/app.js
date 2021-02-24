@@ -4,7 +4,7 @@ function run(){
         alert("Please Enter Location !");
         return;
     }
-fetch("http://localhost:3000/weather?address="+dataget).then((resp)=>{
+fetch("/weather?address="+dataget).then((resp)=>{
     resp.json().then((data)=>{
         if(data.error){
             alert(data.error);
