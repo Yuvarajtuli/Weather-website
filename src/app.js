@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs =require("hbs")
 const app = express()
+const port = process.env.PORT || 3000
 const func = require('../../wether-app/functions/all.js')
 const { json } = require('express')
 const { geocode } = require('../../wether-app/functions/all.js')
@@ -59,6 +60,6 @@ app.get('*',(rep,res)=>{
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('Server is up and running!')
+app.listen(port, ()=>{
+    console.log('Server is up and running '+ port + '!')
 })
