@@ -62,5 +62,10 @@ app.get('*',(rep,res)=>{
 })
 
 app.listen(port, ()=>{
+<<<<<<< HEAD
     console.log('Server is up and running '+ port + '!')
 })
+=======
+    console.log('Server is up and running '+port+" !")
+})
+>>>>>>> d90d8add34e7bf2abb80359ad8866eb3b3173b7e
