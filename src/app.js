@@ -5,7 +5,7 @@ const app = express()
 const port = process.env.PORT || 3000
 const func = require('./functions/all.js')
 const { json } = require('express')
-const { geocode } = require('../../wether-app/functions/all.js')
+const { geocode } = require('./functions/all.js')
 const public_path = path.join(__dirname, '../public')
 app.set('views', path.join(__dirname, '../template/views'))
 const partial_path = path.join(__dirname, '../template/partials')
