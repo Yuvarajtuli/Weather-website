@@ -1,5 +1,4 @@
 const request = require("request")
-const col = require('chalk')
 
 const weather_data = (geocode,callback)=>{
     const url = 'http://api.weatherstack.com/current?access_key=446e829e53b5c1a29d067f7a93b5f5c7&query='+geocode.latitude+','+geocode.longitude
